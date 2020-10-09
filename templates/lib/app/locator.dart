@@ -1,0 +1,8 @@
+import 'package:get_it/get_it.dart';
+import '../services/navigation_service.dart';
+
+final locator = GetIt.I;
+
+void setupLocator() {
+  locator.registerLazySingleton(() => NavigationService());
+}
